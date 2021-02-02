@@ -1,6 +1,6 @@
-release: python manage.py makemigrations --no-input
-release: python manage.py migrate --no-input
-release: python manage.py collectstatic --noinput
+release: python manage.py makemigrations
+release: python manage.py migrate
+release: python manage.py collectstatic
 
 web: gunicorn btre.wsgi --log-file -
 
